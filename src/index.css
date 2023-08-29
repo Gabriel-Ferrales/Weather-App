@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Overpass', system-ui, sans-serif;
+    text-shadow: -1.3983862400054932px 2.09757924079895px 0.6991931200027466px rgba(0, 0, 0, 0.10)
+  }
+}
+
+#root {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.custom-shadow{
+  box-shadow: -5.562857151031494px 3.708571434020996px 3.708571434020996px 0px rgba(255, 255, 255, 0.25) inset, 1.854285717010498px -2.781428575515747px 5.562857151031494px 0px rgba(0, 0, 0, 0.25) inset, -3.708571434020996px 7.417142868041992px 46.35714340209961px 3.708571434020996px rgba(0, 0, 0, 0.10)
+}
+
+
+
+
+@layer base {
+  /* ... */
+  input[type="radio"]:checked+label {
+    @apply bg-amber-300
+  }
+}
+
