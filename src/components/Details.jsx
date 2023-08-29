@@ -60,6 +60,9 @@ export default function Details(){
                 <Visibility visibility={weatherData.visibility} units={units}/>
                 <AirPressure pressure={weatherData.main.pressure}/> 
             </div>
+
+            <p className="text-zinc-300 text-lg mt-16">Gabriel Ferrales - devChallenges.io</p>
+
         </div>
         
        

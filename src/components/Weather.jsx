@@ -44,12 +44,14 @@ export default function Weather({weatherData, units}){
             <p className="text-center text-gray-400 text-4xl font-semibold capitalize">{weatherData.weather.description}</p>
 
             <div className="flex gap-3">
-                <p className="text-zinc-400 text-lg ">Today</p>
-                <p className="text-zinc-400 text-lg ">•</p>
-                <p className="text-zinc-400 text-lg ">{formattedDate}</p>
+                <p className="text-gray-200 text-lg ">Today</p>
+                <p className="text-gray-200 text-lg ">•</p>
+                <p className="text-gray-200 text-lg ">{formattedDate}</p>
             </div>
 
-            <p className="text-zinc-400 text-lg ">{weatherData.name}</p>
+            <p className="text-gray-200 text-lg ">{weatherData.name}</p>
+
+            
 
         </div>
     )
